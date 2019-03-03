@@ -1,0 +1,38 @@
+.book-item {
+    width: 90%;
+    margin: 0.5em auto;
+    padding: 2em;
+    border: 2px solid #cccccc;
+}
+
+.book-header {
+    display: inline-block;
+}
+
+.book-buttons {
+    display: inline-block;
+    float: right;
+}
+
+.book-buttons > button {
+    padding: 0 1em;
+    margin: 0 1em;
+}
+
+.book-description {
+    display: inline;
+    max-height: 200px;
+}
+
+.book-description > p {
+    margin: 0;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.book-item > img {
+    display: block;
+    float: left;
+    height: 200px;
+    width: auto;
+}

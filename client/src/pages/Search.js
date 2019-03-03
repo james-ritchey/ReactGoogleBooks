@@ -63,7 +63,6 @@ class Search extends Component {
     render() {
         return(
             <div>
-                Search Page
                 <Input
                     value={this.state.search}
                     onChange={this.handleInputChange}
