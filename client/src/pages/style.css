@@ -1,0 +1,22 @@
+.search-bar {
+    width: 70%;
+    margin: 1em auto;
+    border: 2px solid #cccccc;
+    padding: 2em;
+
+}
+
+.search-bar > button {
+    float: right;
+}
+
+.search-bar > div {
+    width: 100%;
+    margin: 0.5em 0;
+
+}
+
+.search-bar > div > input {
+    width: calc(100% - 0.5em - 1px);
+    padding: 0.25em;
+}

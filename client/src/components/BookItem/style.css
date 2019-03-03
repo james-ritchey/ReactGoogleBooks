@@ -1,5 +1,6 @@
 .book-item {
     width: 90%;
+    min-height: 300px;
     margin: 0.5em auto;
     padding: 2em;
     border: 2px solid #cccccc;

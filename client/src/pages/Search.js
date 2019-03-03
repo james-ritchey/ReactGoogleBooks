@@ -3,7 +3,7 @@ import { Input, FormBtn } from "../components/SearchBar";
 import ListArea from "../components/ListArea";
 import API from "../utils/API";
 import BookItem from "../components/BookItem";
-
+import "./style.css";
 
 class Search extends Component { 
     
@@ -63,15 +63,20 @@ class Search extends Component {
     render() {
         return(
             <div>
-                <Input
-                    value={this.state.search}
-                    onChange={this.handleInputChange}
-                    name="search"
-                    placeholder="Search for a book..."
-                />
-                <FormBtn
-                    onClick={this.handleSubmit}
-                ></FormBtn>
+                <div className="search-bar">
+                    <h3>Book Search</h3>
+                    <br/>
+                    <Input
+                        value={this.state.search}
+                        onChange={this.handleInputChange}
+                        name="search"
+                        placeholder="Search for a book..."
+
+                    />
+                    <FormBtn
+                        onClick={this.handleSubmit}
+                    ></FormBtn>
+                </div>
                 <ListArea>
                     <h3>{this.state.currentList}</h3>
                     {this.state.books.map(book => (

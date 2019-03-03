@@ -5,12 +5,12 @@ import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import Header from "./components/Header";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+import "./style.css";
 
 function App() {
   return (
     <Router>
-      <div>
+      <div className="container">
         <Nav />
         <Header />
         <Switch>
