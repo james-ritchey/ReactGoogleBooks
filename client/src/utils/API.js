@@ -17,6 +17,7 @@ export default {
   saveBook: function(bookData) {
     return axios.post("/api/books", bookData);
   },
+  // Calls the GoogleBooks API for the search term entered
   searchBook: function(search) {
     console.log(search);
     return axios.get("/api/google/" + search);
