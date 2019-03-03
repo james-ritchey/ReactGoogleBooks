@@ -34,8 +34,16 @@ class Search extends Component {
     }
 
     saveBook = book => {
-        console.log(book);
-        API.saveBook(book);
+        API.saveBook({
+            title: book.title,
+            authors: book.authors,
+            link: book.link,
+            description: book.description,
+            image: book.image,
+            googleId: book.key
+          })
+            .then(res => book)
+            .catch(err => console.log(err));
     }
 
     handleInputChange = event => {
